@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;900&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.main {
+    background-image: url(./assets/images/IN-en-20231127-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2200px, 100vw);
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+    background: linear-gradient(0.25turn, rgb(0, 0, 0, 0.92), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    position: relative;
+    margin: auto;
+    height: 100px;
+}
+
+.navButtons {
+    gap: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+img[alt="Netflix Logo"] {
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.text {
+    position: relative;
+    max-width: 650px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12vw;
+    color: white;
+    top: 30vh;
+    font-family: 'Martel Sans', sans-serif;
+    overflow: visible;
+}
+
+.text h1 {
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.text h3 {
+    margin-bottom: 35px;
+}
+
+.text p {
+    color: rgb(180, 180, 180);
+}
+
+#signInButton {
+    background-color: rgb(210, 47, 39);
+    border: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s 0.1s linear;
+}
+
+#signInButton:hover {
+    background-color: rgb(186, 5, 5);
+    border: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-color: transparent;
+}
+
+.language {
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 6px 12px;
+}
+
+#startButton {
+    display: flex;
+    align-items: center;
+    background-color: rgb(210, 47, 39);
+    border: 0px;
+    color: white;
+    font-size: 24px;
+    font-weight: 550;
+    padding: 10px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s 0.1s linear;
+    gap: 8px;
+}
+
+#startButton:hover {
+    display: flex;
+    align-items: center;
+    background-color: rgb(186, 5, 5);
+    border: 0px;
+    color: white;
+    font-size: 24px;
+    font-weight: 550;
+    padding: 10px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img[alt="leftArrow"] {
+    width: 25px;
+    position: relative;
+    top: 3px;
+}
+
+.inp {
+    position: relative;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#mail {
+    width: 25vw;
+    padding: 14px 24px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+
+.diversion {
+    position: relative;
+    width: 100vw;
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1),
+            rgb(32, 16, 17),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 84%);
+    height: 70px;
+    bottom: 78px;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+}
+
+.curve {
+    position: relative;
+    width: 100%;
+    height: 73px;
+    background: radial-gradient(50% 500% at 50% -420%,
+            rgba(64, 97, 231, 0.4) 80%,
+            rgba(0, 0, 0, 0.1) 100%), black;
+    bottom: 151px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+main {
+    color: white;
+    position: relative;
+    top: -100px;
+}
+
+@media (min-width: 1279px) {
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10vw;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .planBox {
+        box-sizing: border-box;
+        background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+        width: 270px;
+        height: 240px;
+        padding: 30px 28px;
+        border-radius: 15px;
+    }
+
+    .planBox>h3 {
+        font-size: 24px;
+        margin-bottom: 10%;
+    }
+
+    .planBox p {
+        color: rgb(208, 204, 204);
+        margin-bottom: 10%;
+    }
+
+    .mobile p {
+        margin-bottom: 21%;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10vw;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .featureBox {
+        box-sizing: border-box;
+        background: linear-gradient(149deg,
+                #192247 0%,
+                #210e17 96.86%);
+        width: 270px;
+        height: 330px;
+        padding: 24px 19px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .featureBox>h3 {
+        font-size: 22px;
+        margin-bottom: 10%;
+    }
+
+    .featureBox p {
+        color: rgb(208, 204, 204);
+        margin-bottom: 10%;
+        font-size: 14px;
+    }
+
+    .featureBox svg {
+        margin-left: 70%;
+        margin-top: 8%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #tv, #telescope{
+        margin-top: 30%;
+    }
+
+    .planFirst,
+    .planSecond {
+        display: flex;
+        gap: 20px;
+    }
+
+    .featureFirst,
+    .featureSecond {
+        display: flex;
+        gap: 20px;
+    }
+
+
+.faq{
+    margin: 0 10vw;
+}
+
+.quesBox{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 50px;
+}
+
+.ques{
+    max-width: 75%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding: 25px 25px;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.ques:hover{
+    background-color: rgb(65, 65, 65)
+}
+
+.restart{
+    font-size: 15px;
+    margin-left: 10vw;
+    color: rgb(180, 180, 180);
+}
+
+main .inp{
+    margin-left: 10vw;
+}
+
+}
+
+@media (min-width:961px) and (max-width:1279px) {
+    
+    .plans {
+        display: flex;
+        flex-direction: column;
+        margin: 0 6vw;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-basis: 100%;
+
+    }
+
+    .planBox {
+        box-sizing: border-box;
+        background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+        width: 100%;
+        height: 240px;
+        padding: 30px 28px;
+        border-radius: 15px;
+        flex-basis: 100%;
+    }
+
+    .planBox>h3 {
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+
+    .planBox p {
+        color: rgb(208, 204, 204);
+        margin-bottom: 5%;
+    }
+
+    .mobile p, .standard p{
+        margin-bottom: 10%;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 0 6vw;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-basis: 100%;
+    }
+
+    .featureBox {
+        box-sizing: border-box;
+        background: linear-gradient(149deg,
+                #192247 0%,
+                #210e17 96.86%);
+        width: 100%;
+        height: 240px;
+        padding: 24px 19px;
+        border-radius: 15px;
+        overflow: hidden;
+        flex-basis: 100%;
+    }
+
+    .featureBox>h3 {
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+
+    .featureBox p {
+        color: rgb(208, 204, 204);
+        margin-bottom: 5%;
+        font-size: 15px;
+    }
+
+    .featureBox svg {
+        margin-left: 85%;
+    }
+
+    .planFirst,
+    .planSecond {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+    .featureFirst,
+    .featureSecond {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+
+.faq{
+    margin: 0 6vw;
+}
+
+.quesBox{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 50px;
+}
+
+.ques{
+    max-width: 75%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding: 25px 25px;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.ques:hover{
+    background-color: rgb(65, 65, 65)
+}
+
+.restart{
+    font-size: 15px;
+    margin-left: 6vw;
+    color: rgb(180, 180, 180);
+}
+
+main .inp{
+    margin-left: 6vw;
+}
+
+}
+
+@media (max-width: 960px) {
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+        margin: 0 4vw;
+        gap: 10px;
+        margin-bottom: 60px;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
+    .planBox {
+        box-sizing: border-box;
+        background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+        width: 92vw;
+        min-height: 166px;
+        padding: 30px 28px;
+        border-radius: 15px;
+    }
+
+    .planBox>h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .planBox p {
+        color: rgb(208, 204, 204);
+        margin-bottom: 10px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 0 4vw;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
+    .featureBox {
+        box-sizing: border-box;
+        background: linear-gradient(149deg,
+                #192247 0%,
+                #210e17 96.86%);
+        width: 92vw;
+        min-height: 166px;
+        padding: 24px 19px;
+        border-radius: 15px;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+
+    .featureBox>h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .featureBox p {
+        color: rgb(208, 204, 204);
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .featureBox svg {
+        margin-left: 80vw;
+        margin-bottom: 0px;
+        padding-bottom: 0;
+    }
+    .planFirst,
+    .planSecond {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .featureFirst,
+    .featureSecond {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+
+.faq{
+    margin: 0 4vw;
+}
+
+.quesBox{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 50px;
+}
+
+.ques{
+    max-width: 92vw;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding: 25px 25px;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.ques:hover{
+    background-color: rgb(65, 65, 65)
+}
+
+.restart{
+    font-size: 15px;
+    margin-left: 4vw;
+    color: rgb(180, 180, 180);
+}
+
+main .inp{
+    margin-left: 4vw;
+}
+
+}
+
+main #mail{
+    width: 50vw;
+}
+
+footer{
+    color: rgb(180, 180, 180);
+    margin: 10vh 13vw;
+    margin-top: 0px;
+    position: relative;
+    top: -20px;
+}
+
+footer a{
+    color: rgb(180, 180, 180);
+    height: 21px;
+    width: 155px;
+    margin-bottom: 15px;
+}
+
+main{
+    overflow: visible;
+}
+
+.links{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10%;
+    font-size: 14px;
+    max-width: 85%;
+    flex-basis: 100%;
+}
+
+footer .language{
+    width: fit-content;
+    margin-bottom: 30px;
+}
