@@ -291,13 +291,6 @@ main {
         font-size: 14px;
     }
 
-    .featureBox svg {
-        margin-left: 70%;
-        margin-top: 8%;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-
     #tv, #telescope{
         margin-top: 30%;
     }
@@ -442,10 +435,6 @@ main .inp{
         font-size: 15px;
     }
 
-    .featureBox svg {
-        margin-left: 85%;
-    }
-
     .planFirst,
     .planSecond {
         display: flex;
@@ -587,11 +576,6 @@ main .inp{
         font-size: 14px;
     }
 
-    .featureBox svg {
-        margin-left: 80vw;
-        margin-bottom: 0px;
-        padding-bottom: 0;
-    }
     .planFirst,
     .planSecond {
         display: flex;
@@ -686,4 +670,10 @@ main{
 footer .language{
     width: fit-content;
     margin-bottom: 30px;
+}
+
+.svg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
