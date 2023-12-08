@@ -509,6 +509,11 @@ main .inp{
 
 @media (max-width: 960px) {
 
+    .text h1 {
+        font-size: 42px;
+        font-weight: 900;
+    }
+
     .plans {
         display: flex;
         flex-direction: column;
